@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/index.js"></script>
+  <title>Game</title>
+</head>
+<body>
+<div class="quiz-container">
+        
+        <div id="start-screen">
+            <h1>คุณคือแสงแบบไหนของจักรวาล</h1>
+            <p>ท่ามกลางความเงียบของจักรวาล ดวงดาวแต่ละดวงถือกำเนิดขึ้น
+            </p>
+            <p>พร้อมภารกิจบางอย่าง…และในหมู่ดาวเหล่านั้นมีแสงหนึ่งคือ ‘คุณ’</p>
+            <button id="start-btn" onclick="startQuiz()">ออกเดินทางในห้วงจักรวาล</button>
+        </div>
+
+        <div id="question-screen" class="hidden"> 
+            <p id="progress-text">ช่วงแสงที่ 1/7</p>
+            <img id="question-image" src="" alt="รูปภาพประกอบคำถาม" class="q-image">
+            <h2 id="question-text">คำถามจะแสดงตรงนี้...</h2>
+            <div id="options-container" class="options-group">
+                </div>
+            <button id="next-btn" onclick="nextQuestion()">ถัดไป</button>
+        </div>
+
+        <div id="result-screen" class="hidden">
+            <h2>ตัวตนของคุณคือ:</h2>
+            <h1 id="personality-name">...</h1>
+            <img id="result-image" src="" alt="รูปภาพผลลัพธ์ตัวตน" class="result-img">
+            <p id="result-description">คำอธิบายบุคลิกภาพของคุณจะแสดงตรงนี้</p>
+            <button onclick="window.location.reload()">ทำใหม่</button>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
